@@ -33,7 +33,7 @@ public class HelloFriend {
             System.out.print("\uD83E\uDD14 Say me the reminders of diving your age by 3, 5 and 7: \n>>");
         }
 
-        if (divingAge < 7) {
+         if (divingAge < 7) {
             System.out.println("Wow " + friendName + "! You are very young, just " + userAge + " years old and you're already running an app " +
                     "by yourself. That's sweet! Try and learn some programming, maybe you'll be the Iron Man of our century?\n");
         } else if (divingAge < 15) {
@@ -55,7 +55,7 @@ public class HelloFriend {
 
         int va = Integer.parseInt(reader.readLine());
 
-        if ( va < 0 || va == 4 ) {
+        for (; va < 0 || va == 4; ) {
             System.out.print("\uD83D\uDE12 Please try again.\n>>");
             int vaa = Integer.parseInt(reader.readLine());
             if (vaa == 1 || vaa == 2 || vaa == 3) {
@@ -73,10 +73,11 @@ public class HelloFriend {
                                 "Wake me up later when you're bored!");
                         break;
                 }
+                break;
             }
         }
 
-else  {
+        for (; va == 1 || va == 2 || va == 3; ) {
 
             switch (va) {
                 case 1:
@@ -92,9 +93,14 @@ else  {
                             "Wake me up later when you're bored!");
                     break;
             }
+            break;
         }
     }
 }
+
+
+
+
 
 
 
