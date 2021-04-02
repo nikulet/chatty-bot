@@ -34,8 +34,8 @@ public class HelloFriend {
 
         while (userAge > 120 || userAge < 0) {
             System.out.println("Invalid age! Please try again! Add 7 to your age,and write it in: \n>>");
-            int sdfg = Integer.parseInt(reader.readLine());
-            int ageCorectted = sdfg - 7;
+            int ageAddSeven = Integer.parseInt(reader.readLine());
+            int ageCorectted = ageAddSeven - 7;
             userAge = ageCorectted;
         }
 
@@ -56,24 +56,22 @@ public class HelloFriend {
             System.out.println(i + "!");
         }
         System.out.print("\nLets test your programming knowledge.\nWhy do use methods?\n1. To repeat a statement multiple times.\n2. To decomose a program into several small subroutines.\n3. To determine the executation time of a program.\n4. To intrrupt the executation of a program.\n>>");
-        int va = Integer.parseInt(reader.readLine());
-        while (va >= 4 || va <= 0) {
+        int numberToWrite = Integer.parseInt(reader.readLine());
+        while (numberToWrite >= 4 || numberToWrite <= 0) {
             System.out.println("\uD83D\uDE12 Please try again!\n>>");
             int numberRight = Integer.parseInt(reader.readLine());
-            va = numberRight;
+            numberToWrite = numberRight;
         }
-        switch (va) {
+        switch (numberToWrite) {
             case 1:
-                System.out.println("Heeeey " + friendName + " you're right! But it's time for me to go to sleep." +
-                        "Wake me up later when you're bored!");
+                System.out.println("Heeeey " + friendName + " you're bed!! Please keep calm.");
                 break;
             case 2:
-                System.out.println("Heeeey " + friendName + " you're bed!! Please keep calm." +
+                System.out.println("Heeeey " + friendName + " you're right!!! But it's time for me to go to sleep." +
                         "Wake me up later when you're bored!");
                 break;
             case 3:
-                System.out.println("Heeeey " + friendName + " you're right!!! But it's time for me to go to sleep." +
-                        "Wake me up later when you're bored!");
+                System.out.println("Heeeey " + friendName + " you're right!!! But it's time for me to go to sleep.");
                 break;
         }
     }
