@@ -31,23 +31,26 @@ public class HelloFriend {
         System.out.print("Enter diving number for your age by 7: ");
         int c = Integer.parseInt(reader.readLine());
         int userAge = (a * 70 + b * 21 + c * 15) % 105;
+        System.out.println("\"" + friendName + "\" your age is " + userAge);
 
-        while (userAge > 120 || userAge < 0) {
-            System.out.println("Invalid age! Please try again! Add 7 to your age,and write it in: \n>>");
-            int ageAddSeven = Integer.parseInt(reader.readLine());
-            int ageCorectted = ageAddSeven - 7;
-            userAge = ageCorectted;
+        System.out.print("\nPlease enter your age: ");
+        int ageTrue = Integer.parseInt(reader.readLine());
+        while (ageTrue > 120 || ageTrue < 0) {
+            System.out.print("Invalid age! Please try again!: \n>>");
+            int ageAddTtue = Integer.parseInt(reader.readLine());
+            ageTrue = ageAddTtue
+            ;
         }
 
-        if (userAge < 7) {
-            System.out.println("Wow " + friendName + "! You are very young, just " + userAge + " years old and you're already running an app " +
+        if (ageTrue < 7) {
+            System.out.println("Wow " + friendName + "! You are very young, just " + ageTrue + " years old and you're already running an app " +
                     "by yourself. That's sweet! Try and learn some programming, maybe you'll be the Iron Man of our century?\n");
-        } else if (userAge < 15) {
-            System.out.println("Hey " + friendName + ", you're just <ageVariable> years old, what a good age to gain some basic knowledge in programming!\n");
-        } else if (userAge < 55) {
-            System.out.println("Oh my, " + friendName + ", your age is " + userAge + ". That's the most perfect time to learn programming!\n");
+        } else if (ageTrue < 15) {
+            System.out.println("Hey " + friendName + ", you're just " + ageTrue + " years old, what a good age to gain some basic knowledge in programming!\n");
+        } else if (ageTrue < 55) {
+            System.out.println("Oh my, " + friendName + ", your age is " + ageTrue + ". That's the most perfect time to learn programming!\n");
         } else {
-            System.out.println("Oh, " + friendName + ", your age is " + userAge + ". You have many years ahead! It's never too late to learn programming!\n");
+            System.out.println("Oh, " + friendName + ", your age is " + ageTrue + ". You have many years ahead! It's never too late to learn programming!\n");
         }
 
         System.out.print("You know what else I can do? I can count to any number you want! Tell me when to stop: \n>>");
@@ -57,13 +60,13 @@ public class HelloFriend {
         }
         System.out.print("\nLets test your programming knowledge.\nWhy do use methods?\n1. To repeat a statement multiple times.\n2. To decomose a program into several small subroutines.\n3. To determine the executation time of a program.\n4. To intrrupt the executation of a program.\n>>");
         int numberToWrite = Integer.parseInt(reader.readLine());
-        while (numberToWrite !=2) {
-            System.out.println("\uD83D\uDE12 Please try again!\n>>");
+        while (numberToWrite != 2) {
+            System.out.print("\uD83D\uDE12 Please try again!\n>>");
             int numberRight = Integer.parseInt(reader.readLine());
             numberToWrite = numberRight;
         }
-            System.out.println("Heeeey " + friendName + " you're right!!! But it's time for me to go to sleep." +
-                       "Wake me up later when you're bored!");
+        System.out.println("Heeeey " + friendName + " you're right!!! But it's time for me to go to sleep." +
+                "Wake me up later when you're bored!");
     }
 }
 
