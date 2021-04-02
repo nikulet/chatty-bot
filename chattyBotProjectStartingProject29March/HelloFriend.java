@@ -57,23 +57,13 @@ public class HelloFriend {
         }
         System.out.print("\nLets test your programming knowledge.\nWhy do use methods?\n1. To repeat a statement multiple times.\n2. To decomose a program into several small subroutines.\n3. To determine the executation time of a program.\n4. To intrrupt the executation of a program.\n>>");
         int numberToWrite = Integer.parseInt(reader.readLine());
-        while (numberToWrite >= 4 || numberToWrite <= 0) {
+        while (numberToWrite !=2) {
             System.out.println("\uD83D\uDE12 Please try again!\n>>");
             int numberRight = Integer.parseInt(reader.readLine());
             numberToWrite = numberRight;
         }
-        switch (numberToWrite) {
-            case 1:
-                System.out.println("Heeeey " + friendName + " you're bed!! Please keep calm.");
-                break;
-            case 2:
-                System.out.println("Heeeey " + friendName + " you're right!!! But it's time for me to go to sleep." +
-                        "Wake me up later when you're bored!");
-                break;
-            case 3:
-                System.out.println("Heeeey " + friendName + " you're right!!! But it's time for me to go to sleep.");
-                break;
-        }
+            System.out.println("Heeeey " + friendName + " you're right!!! But it's time for me to go to sleep." +
+                       "Wake me up later when you're bored!");
     }
 }
 
